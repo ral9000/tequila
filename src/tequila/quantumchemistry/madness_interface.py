@@ -106,7 +106,7 @@ class QuantumChemistryMadness(QuantumChemistryBase):
             status += str(g)
             status += "pnoinfo report:\n"
             status += str(pinfo)
-            if "failed" in h or "failed" in g:
+            if "failed" in h or "failed" in g or "failed" in pinfo:
                 raise TequilaMadnessException("Could not initialize the madness interface\n"
                                               "Status report is\n"
                                               "{status}\n"
